@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.App .navbar {
+  width: 100vw;
+  height: 100px;
+}
+
+.App .navbar .container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.App .navbar .container .logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.App .navbar .container .links {
+  display: block;
+}
+
+.App .navbar .container .links ul {
+  list-style: none;
+}
+
+.App .navbar .container .links ul li {
+  display: inline-block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.App .navbar .container .links ul li:nth-child(1) {
+  margin-right: 10px;
+}
+
+.App .navbar .container .links ul li:hover {
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.App .navbar .container .links ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.App .captions,
+.App .CreateCaptions,
+.App .Login,
+.App .Signup {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.App .CreateCaptions {
+  height: 400px;
+}
+
+.App .CreateCaptions .container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .CreateCaptions .container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.App .CreateCaptions .container form textarea {
+  resize: none;
+  margin: 30px 0;
+  border-radius: 10px;
+  border-color: #bbb;
+}
+
+.App .CreateCaptions .container form #btn {
+  display: inline-block;
+  width: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #eee;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.App .CreateCaptions .container form #btn:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.App .Login,
+.App .Signup {
+  height: 400px;
+}
+
+.App .Login .container,
+.App .Signup .container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.App .Login .container form,
+.App .Signup .container form {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 0;
+}
+
+.App .Login .container form #email,
+.App .Signup .container form #email {
+  margin-bottom: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: #bbb;
+  padding: 5px;
+}
+
+.App .Login .container form #email:focus,
+.App .Signup .container form #email:focus {
+  outline: none;
+}
+
+.App .Login .container form #password,
+.App .Signup .container form #password {
+  margin-bottom: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: #bbb;
+  padding: 5px;
+}
+
+.App .Login .container form #password:focus,
+.App .Signup .container form #password:focus {
+  outline: none;
+}
+
+.App .Login .container form #btn,
+.App .Signup .container form #btn {
+  display: inline-block;
+  width: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #eee;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.App .Login .container form #btn:hover,
+.App .Signup .container form #btn:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.App .Login .container .redirect,
+.App .Signup .container .redirect {
+  color: #aaa;
+}
+
+.App .Login .container .redirect a,
+.App .Signup .container .redirect a {
+  color: inherit;
+}
+
+.App .Signup {
+  height: 500px;
+}
+
+.App .Signup #name {
+  margin-bottom: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: #bbb;
+  padding: 5px;
+}
+
+.App .Signup #name:focus {
+  outline: none;
+}
+
+.App .captions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.App .captions .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.App .captions .container .caption {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.App .captions .container .caption .firstHalf {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .captions .container .caption .firstHalf .pic {
+  width: 75%;
+}
+
+.App .captions .container .caption .firstHalf .pic img {
+  width: 100%;
+}
+
+.App .captions .container .caption .secondHalf {
+  width: 70%;
+}
+
+.App .captions .container .caption .secondHalf .user {
+  margin-bottom: 20px;
+}
+
+.App .captions .container .caption .secondHalf .content {
+  margin-bottom: 20px;
+}
+
+.App .captions .container .caption .secondHalf .info .likes {
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .captions .container .caption .secondHalf .info .likes i {
+  padding-right: 5px;
+}
+
+.App .captions .container .caption .secondHalf .info .likes:hover {
+  cursor: pointer;
+}
+
+.App .captions .container .caption .secondHalf .info .timeStamp {
+  color: #bbb;
+}
+/*# sourceMappingURL=App.css.map */

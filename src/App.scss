@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.App {
+  .navbar {
+    width: 100vw;
+    height: 100px;
+
+    .container {
+      max-width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+
+      .logo {
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+
+      .links {
+        display: block;
+
+        ul {
+          list-style: none;
+
+          li {
+            display: inline-block;
+            border-bottom: 1px solid rgba($color: #000000, $alpha: 0);
+
+            &:nth-child(1) {
+              margin-right: 10px;
+            }
+
+            &:hover {
+              cursor: pointer;
+              border-bottom: 1px solid rgba($color: #000000, $alpha: 0.6);
+            }
+
+            a {
+              text-decoration: none;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .captions,
+  .CreateCaptions,
+  .Login,
+  .Signup {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .CreateCaptions {
+    height: 400px;
+
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        textarea {
+          resize: none;
+          margin: 30px 0;
+          border-radius: 10px;
+          border-color: #bbb;
+        }
+
+        #btn {
+          display: inline-block;
+          width: 80px;
+          padding: 10px;
+          border: none;
+          border-radius: 10px;
+          background-color: #eee;
+          box-sizing: border-box;
+          margin: 0 auto;
+
+          &:hover {
+            background-color: #ccc;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .Login,
+  .Signup {
+    height: 400px;
+
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      form {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+
+        #email {
+          margin-bottom: 20px;
+          border: 2px solid;
+          border-radius: 5px;
+          border-color: #bbb;
+          padding: 5px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        #password {
+          margin-bottom: 20px;
+          border: 2px solid;
+          border-radius: 5px;
+          border-color: #bbb;
+          padding: 5px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        #btn {
+          display: inline-block;
+          width: 80px;
+          padding: 10px;
+          border: none;
+          border-radius: 10px;
+          background-color: #eee;
+          box-sizing: border-box;
+          margin: 0 auto;
+
+          &:hover {
+            background-color: #ccc;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .redirect {
+        color: #aaa;
+
+        a {
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  .Signup {
+    height: 500px;
+
+    #name {
+      margin-bottom: 20px;
+      border: 2px solid;
+      border-radius: 5px;
+      border-color: #bbb;
+      padding: 5px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .captions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .caption {
+        width: 500px;
+        display: flex;
+        padding: 30px 0;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+
+        .firstHalf {
+          width: 25%;
+          display: flex;
+          justify-content: center;
+
+          .pic {
+            width: 75%;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .secondHalf {
+          width: 70%;
+
+          .user {
+            margin-bottom: 20px;
+          }
+
+          .content {
+            margin-bottom: 20px;
+          }
+
+          .info {
+            .likes {
+              width: 30px;
+              display: flex;
+              align-items: center;
+
+              i {
+                padding-right: 5px;
+              }
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+
+            .timeStamp {
+              color: #bbb;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// * {
+//   margin: 0;
+//   padding: 0;
+//   font-family: "Yanone Kaffeesatz", sans-serif;
+// }
+
+// .navbar {
+//   width: 100vw;
+//   height: 100px;
+//   background-color: #ff7e67;
+// }
+
+// .navbar .links {
+//   float: right;
+//   z-index: 2;
+//   position: relative;
+//   top: 50%;
+//   transform: perspective(1px) translateY(-50%);
+// }
+
+// .navbar .links ul li {
+//   list-style: none;
+//   display: inline;
+//   padding: 0 5px;
+// }
+
+// .navbar .links ul #logout {
+//   cursor: pointer;
+// }
+
+// .navbar .links ul li a {
+//   color: #fff;
+//   text-decoration: none;
+// }
+
+// .navbar .container {
+//   width: 90%;
+//   max-width: 1400px;
+//   height: 100%;
+//   margin: 0 auto;
+//   color: #fff;
+// }
+
+// .navbar .container .logo {
+//   float: left;
+//   position: relative;
+//   top: 50%;
+//   transform: perspective(1px) translateY(-50%);
+// }
+
+// .navbar .container .logo a {
+//   color: #fff;
+//   text-decoration: none;
+// }
+
+// .captions {
+//   width: 100%;
+//   height: auto;
+//   margin-top: 20px;
+// }
+
+// .captions .container {
+//   width: 90%;
+//   max-width: 1400px;
+//   margin: 0 auto;
+// }
+
+// .captions .container .caption {
+//   display: block;
+//   width: 500px;
+//   height: 60px;
+//   padding: 40px;
+//   margin: 0 auto 20px;
+//   border-radius: 20px;
+//   background-color: #eee;
+//   text-align: center;
+// }
+
+// .captions .container .caption .user {
+//   height: 100%;
+//   float: left;
+//   margin-right: 20px;
+// }
