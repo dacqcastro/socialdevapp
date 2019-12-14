@@ -14,7 +14,7 @@ import Signup from "./components/Signup";
 import AuthRoute from "./components/AuthRoute";
 import PrivateRoute from "./components/PrivateRoute";
 
-axios.defaults.baseURL = "http://socialappp.herokuapp.com/";
+axios.defaults.baseURL = "https://socialappp.herokuapp.com/";
 
 const token = localStorage.getItem("auth-token");
 
